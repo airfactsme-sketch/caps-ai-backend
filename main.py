@@ -140,4 +140,5 @@ async def deny_student(student_id: str, authorization: Optional[str] = Header(No
     if not doc_ref.get().exists:
         raise HTTPException(status_code=404, detail='Student not found')
     doc_ref.delete()
-    return {'status': 'deleted', 'student_id': student_id'}
+    return {'status': 'deleted', 'student_id': student_id}
+
