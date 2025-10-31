@@ -3,6 +3,8 @@ from pydantic import BaseModel
 import openai
 import os
 from dotenv import load_dotenv
+import json
+
 
 # Firebase admin imports
 import firebase_admin
